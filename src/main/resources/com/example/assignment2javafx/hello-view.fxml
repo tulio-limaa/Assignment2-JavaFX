@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.example.assignment2javafx.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Weather Data" />
+    <Button fx:id="torontoButton" onAction="#onTorontoButtonClick" text="Toronto" />
+    <Button fx:id="newYorkButton" onAction="#onNewYorkButtonClick" text="New York" />
+    <Button fx:id="vancouverButton" onAction="#onVancouverButtonClick" text="Vancouver" />
+    <TextArea fx:id="resultArea" editable="false" prefHeight="105.0" prefRowCount="10" prefWidth="479.0" />
+</VBox>
